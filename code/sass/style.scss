@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import "libs/vairiables";
+
+/*.border 
+{
+	border: 1px solid black;
+		
+	}
+
+	.red {
+		border-color: red;
+	}
+	
+	.green {
+		border-color: green;
+	}
+	
+	.blue {
+		border-color: blue;
+	}
+	
+	.purple {
+		border-color: #a70da7;
+}*/
+
+body{
+	margin: auto;
+}
+
+.header
+{
+	display: flex;
+	justify-content: center;
+	margin-top: 0.5rem;
+	
+	&_logo
+	{
+		display: flex;
+		width: 50%;
+	}
+}
+.hero 
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	&_location
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 3rem;
+		background: $color_hero;
+	}
+}
+
+
+
+
+.feature_icon
+{
+    width: 0.6em;
+}
+
+
+/*# sourceMappingURL=style.css.map */

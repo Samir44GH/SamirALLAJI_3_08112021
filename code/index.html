@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <title>ohmyfood</title>
+</head>
+<body>
+     <!--Loading-->
+     <div class="ldg_wrapper">
+        <div class="ldg_spinner">
+            <div class="spin"></div>
+            <div class="spin"></div>
+            <div class="spin"></div>
+        </div>
+    </div>
+
+     <!--Header-->
+     <header class="header border black">
+        <img src="images/logo/ohmyfood.png" alt="Logo Oh my food" class="header_logo border red">
+    </header>
+     
+    <!--Hero-->
+        <div class="hero border black">
+            <p class="hero_location border black">
+                <span class="hero_icon border black"><img src="images/svg/map-marker-alt.svg" alt="icônee de localisation" class="feature_icon"></span>
+                Paris, Belleville
+            </p>
+            <div class="hero_wrapper border purple">
+                <h1 class="hero_title border purple">
+                    Réservez le menu qui vous convient
+                </h1>
+                <p class="hero_text border purple">
+                    Découvrez des restaurants d'exceptions, séléctionnés par nos soins.
+                </p>
+                <button type="buttton" class="hero_btn border purple">
+                    Explorer nos restaurants
+                </button>
+            </div>
+        </div>
+        <main>
+            <!--Features-->
+            <section class="global_features border green">
+                <h2 class="Feature_title border green">Fonctionnement</h2>
+                <ul class="features_list border purple">
+                    <li class="features_element border purple">
+                        <input type="checkbox" name="choose" id="choose" class="features_checkbox border black">
+                        <label for="choose" class="features_under_elt border black">
+                        <span class="feature_number">1</span><span class="features_icon border purple"><img src="images/svg/mobile-alt.svg" alt="icône de mobile" class="feature_icon"></span><span class="features_ictext border green">Choisissez votre restaurant</span> 
+                        </label>
+                    </li>
+                    <li class="features_element border purple">
+                        <input type="checkbox" name="composed" id="composed" class="features_checkbox border black">
+                        <label for="composed" class="features_under_elt border black">
+                            <span class="feature_number">2</span><span class="features_icon border purple"><img src="images/svg/list-ul.svg" alt="icône d'une liste" class="feature_icon"></span><span class="features_ictext border green">Composez votre menu</span> 
+                        </label>
+                    </li>
+                    <li class="features_element border purple">
+                        <input type="checkbox" name="disgusting" id="disgusting" class="features_checkbox border black">
+                        <label for="disgusting" class="features_under_elt border black">
+                            <span class="feature_number">3</span><span class="features_icon border purple"><img src="images/svg/store.svg" alt="icône d'un magasin" class="feature_icon"></span><span class="features_ictext border green">Dégustez au restaurant</span> 
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <!--Restaurants-->
+            <section class="restaurants border purple">
+                <h2 class="section_title border purple">Restaurants</h2>
+                <div class="restaurants_list border purple">
+                    <article class="restaurant_card border purple">
+                        <a href="lapalettedugout.html" class="restaurant_card_href border purple">
+                            <img src="images/restaurants/la_palette_du_gout.jpg" class="restaurant_img border purple" alt="Assiette gastronomique savoureuse prête à être dégusté par une personne">
+                            <div class="info_restaurant border black">
+                                <h2 class="article_title border black">La palette du goût</h2>
+                                <p class="article_text border black">Ménilmontant</p>
+                                <div class="info_restaurant_heart border black">
+                                    <i class="far fa-heart info_restaurant_heart_empty"></i>
+                                    <i class="fas fa-heart info_restaurant_heart_full"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="restaurant_card border purple">
+                        <a href="lanoteenchantee.html" class="restaurant_card_href border purple">
+                            <img src="images/restaurants/la_note_enchantee.jpg" class="restaurant_img border purple" alt="Assiette gastronomique savoureuse prête à être dégusté par une personne">
+                            <div class="info_restaurant border black">
+                                <h2 class="article_title border black">La note enchantée</h2>
+                                <p class="article_text border black">Charonne</p>
+                                <div class="info_restaurant_heart border black">
+                                    <i class="far fa-heart info_restaurant_heart_empty"></i>
+                                    <i class="fas fa-heart info_restaurant_heart_full"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="restaurant_card border purple">
+                        <a href="alafrançaise.html" class="restaurant_card_href border purple">
+                            <img src="images/restaurants/a_la_française.jpg" class="restaurant_img border purple" alt="Assiette gastronomique savoureuse prête à être dégusté par une personne">
+                            <div class="info_restaurant border black">
+                                <h2 class="article_title border black">À la française</h2>
+                                <p class="article_text border black">Cité rouge</p>
+                                <div class="info_restaurant_heart border black">
+                                    <i class="far fa-heart info_restaurant_heart_empty"></i>
+                                    <i class="fas fa-heart info_restaurant_heart_full"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="restaurant_card border purple">
+                        <a href="ledelicedessens.html" class="restaurant_card_href border purple">
+                            <img src="images/restaurants/le_delice_des_sens.jpg" class="restaurant_img border purple" alt="Assiette gastronomique savoureuse prête à être dégusté par une personne">
+                            <div class="info_restaurant border black">
+                                <h2 class="article_title border black">Le délice des sens</h2>
+                                <p class="article_text border black">Folie-Méricourt</p>
+                                <div class="info_restaurant_heart border black">
+                                    <i class="far fa-heart info_restaurant_heart_empty"></i>
+                                    <i class="fas fa-heart info_restaurant_heart_full"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer class="footer border black">
+            <div class="footer_menu border black">
+            <img src="images/logo/ohmyfood.png" alt="logo oh my food" class="footer_img border black">
+            <ul class="footer_list border black">
+                <li class='footer_element'><a href="#0"><img src="images/svg/utensils.svg" alt="icone d'une fourchette et d'un couteau'" class="feature_icon">Proposer un restaurant</a></li>
+                <li class='footer_element'><a href="#0"><img src="images/svg/hands-helping.svg" alt="icone de deux mains qui se serre" class="feature_icon">Devenir partenaire</a></li>
+                <li class='footer_element'><a href="#0">Mention légale</a></li>
+                <li class='footer_element'><a href="mailto:contact@myfood.com">Contact</a></li>
+            </ul>
+            </div>
+        </footer>
+    
+        
+    </body>
+    </html>
+    
+    
+</body>
+</html>
