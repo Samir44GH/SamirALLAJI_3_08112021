@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import "libs/vairiables";
+@import "libs/utils/vairiables";
+@import "libs/base/polices";
+@import "libs/layout/header";
 
 /*.border 
 {
@@ -28,23 +28,16 @@ body{
 	margin: auto;
 }
 
-.header
+.displaynone
 {
-	display: flex;
-	justify-content: center;
-	margin-top: 0.5rem;
-	
-	&_logo
-	{
-		display: flex;
-		width: 50%;
-	}
+	display: none;
 }
 .hero 
 {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	
 	&_location
 	{
 		display: flex;
@@ -52,7 +45,35 @@ body{
 		align-items: center;
 		height: 3rem;
 		background: $color_hero;
+		margin-bottom: 0px;
+		border-top: 3px solid darken($color_hero,10%);
+		font-family: 'Roboto';
 	}
+	&_location_inside
+	{
+		font-family: 'Roboto';
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 36%;
+    	margin-left: -1rem;
+	}
+	&_icon
+	{
+		font-size: 1.3rem;
+		display: flex;
+		height: 3rem;
+		
+	}
+	&_text
+	{
+		font-weight: 550;
+	}
+	&_wrapper
+	{
+		margin: 0px;
+	}
+	
 }
 
 

@@ -1,5 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@font-face {
+  font-family: 'Roboto';
+  src: url(polices/Robot-Regular.ttf);
+  src: url(polices/Roboto-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url(polices/Shrikhand-Regular.ttf);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10rem;
+}
+
 /*.border 
 {
 	border: 1px solid black;
@@ -25,21 +52,8 @@ body {
   margin: auto;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 0.5rem;
-}
-
-.header_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 50%;
+.displaynone {
+  display: none;
 }
 
 .hero {
@@ -67,6 +81,41 @@ body {
           align-items: center;
   height: 3rem;
   background: #e9e9e9;
+  margin-bottom: 0px;
+  border-top: 3px solid #d0d0d0;
+  font-family: 'Roboto';
+}
+
+.hero_location_inside {
+  font-family: 'Roboto';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 36%;
+  margin-left: -1rem;
+}
+
+.hero_icon {
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3rem;
+}
+
+.hero_text {
+  font-weight: 550;
+}
+
+.hero_wrapper {
+  margin: 0px;
 }
 
 .feature_icon {
