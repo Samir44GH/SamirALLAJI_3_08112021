@@ -35,7 +35,7 @@ body{
 .hero 
 {
 	display: flex;
-	justify-content: center;
+	
 	flex-direction: column;
 	
 	&_location
@@ -47,7 +47,7 @@ body{
 		background: $color_hero;
 		margin-bottom: 0px;
 		border-top: 3px solid darken($color_hero,10%);
-		font-family: 'Roboto';
+		
 	}
 	&_location_inside
 	{
@@ -55,34 +55,41 @@ body{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		width: 36%;
-    	margin-left: -1rem;
+		width: 8.5rem;
+    	margin-left: -2rem;
 	}
 	&_icon
 	{
-		font-size: 1.3rem;
 		display: flex;
 		height: 3rem;
-		
 	}
 	&_text
 	{
 		font-weight: 550;
+		font-size: 1rem;
 	}
 	&_wrapper
 	{
 		margin: 0px;
+		background-color: $color_wrapper;
+		display: flex;	
+		justify-content: center;
 	}
-	
+	&_wrapper_inside
+	{
+		width: 15rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 }
-
-
-
-
 .feature_icon
 {
-    width: 0.6em;
+	width: 0.6rem;
+	&_loc
+	{
+		width: 0.8rem;
+	}
 }
-
-
+	
 /*# sourceMappingURL=style.css.map */

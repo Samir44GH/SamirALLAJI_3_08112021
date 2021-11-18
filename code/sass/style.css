@@ -24,7 +24,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 10rem;
+  width: 11rem;
 }
 
 /*.border 
@@ -60,9 +60,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -83,7 +80,6 @@ body {
   background: #e9e9e9;
   margin-bottom: 0px;
   border-top: 3px solid #d0d0d0;
-  font-family: 'Roboto';
 }
 
 .hero_location_inside {
@@ -98,12 +94,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 36%;
-  margin-left: -1rem;
+  width: 8.5rem;
+  margin-left: -2rem;
 }
 
 .hero_icon {
-  font-size: 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,13 +107,39 @@ body {
 
 .hero_text {
   font-weight: 550;
+  font-size: 1rem;
 }
 
 .hero_wrapper {
   margin: 0px;
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero_wrapper_inside {
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .feature_icon {
-  width: 0.6em;
+  width: 0.6rem;
+}
+
+.feature_icon_loc {
+  width: 0.8rem;
 }
 /*# sourceMappingURL=style.css.map */
