@@ -148,7 +148,13 @@ body{
 		margin-top: 1rem;
 		margin-bottom: 1rem;
 		border-radius: 1rem;
-		width: 20rem;
+		width: 19rem;
+		box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+		7px 7px 20px 0px rgba(0,0,0,.1),
+		4px 4px 5px 0px rgba(0,0,0,.1);
+		&:hover{
+			background-color: lighten($color_primary, 30%);
+		}
 	}&_under_elt
 	{
 		display: flex;
@@ -168,33 +174,48 @@ body{
 		text-align: center;
 		color: white;
 		padding: 2px;
-		margin-left: -3px;
+		margin-left: -6px;
+		
 	}
 	&_icona
 	{
-		width: 0.7rem;
+		width: 0.8rem;
 		margin: auto;
 		margin-left: 1rem;
-		margin-right: 1rem;	
+		margin-right: 1.3rem;	
+		filter: invert(42%) sepia(2%) saturate(3%) hue-rotate(19deg) brightness(107%) contrast(84%);
+		&:hover
+		{
+			filter: invert(39%) sepia(97%) saturate(2407%) hue-rotate(243deg) brightness(91%) contrast(89%);;
+		}
 	}
 	&_iconb
 	{
-		width: 1rem;
+		width: 1.15rem;
 		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		margin-left: 1rem;
 		margin-right: 1rem;
+		filter: invert(42%) sepia(2%) saturate(3%) hue-rotate(19deg) brightness(107%) contrast(84%);
+			&:hover
+			{
+				filter: invert(39%) sepia(97%) saturate(2407%) hue-rotate(243deg) brightness(91%) contrast(89%);
+			}
 	}
 	&_icond
 	{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 1rem;
+		margin:auto;
+		
 	}
 	&_ictext
 	{
 		font-family: $roboto;
-		padding: 5px;
+		
 	}
 }
 
