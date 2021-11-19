@@ -122,7 +122,7 @@ body{
 {
 	&_title
 	{
-		margin-left: 2rem;
+		margin-left: 1.6rem;
 		font-family: $roboto;
 	}
 	&_list
@@ -132,6 +132,7 @@ body{
 		flex-direction: column;
 		margin: auto;
 		padding: 0rem;
+		width: 90%;
 	}
 	&_checkbox
 	{
@@ -148,14 +149,15 @@ body{
 		margin-top: 1rem;
 		margin-bottom: 1rem;
 		border-radius: 1rem;
-		width: 19rem;
+		width: 100%;
 		box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
 		7px 7px 20px 0px rgba(0,0,0,.1),
 		4px 4px 5px 0px rgba(0,0,0,.1);
 		&:hover{
 			background-color: lighten($color_primary, 30%);
 		}
-	}&_under_elt
+	}
+	&_under_elt
 	{
 		display: flex;
 		align-items: center;
@@ -170,7 +172,7 @@ body{
 		background-color: $color_primary;
 		font-size: 10px;
 		width: 15px;
-		height: 15px;
+		height: 16px;
 		text-align: center;
 		color: white;
 		padding: 2px;
@@ -216,6 +218,109 @@ body{
 	{
 		font-family: $roboto;
 		
+	}
+}
+/*Restaurants*/
+.restaurants
+{
+background: $color_wrapper;
+display: flex;
+flex-direction: column;
+margin: auto;
+	&_title
+	{
+		font-family: $roboto;
+	}
+	&_list
+	{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: auto;
+	}
+	&_card
+	{
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		width: 85%;
+		border-radius: 1rem;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	&_card_href
+	{
+		list-style: none;
+		text-decoration: none;
+		position: relative;
+		background: white;
+		border-radius: 1rem;
+	}
+	&_img_nouveau
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 6rem;
+			height: 2rem;
+			background: $color_tertiary;
+			border-radius: 0.2rem;
+			color: darken($color_tertiary, 50%);
+			font-family: $roboto;
+			margin: 0%;
+		}
+	&_img
+	{
+		width: 100%;
+		height: 11.5rem;
+		object-fit: cover;
+		margin: 0px;
+		border-radius: 1rem 1rem 0rem 0rem;
+	}
+}
+
+.info_restaurant
+{
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+	background: white;
+	border-radius: 0rem 0rem 1rem 1rem;
+	&_localisation
+	{
+		width: 80%;
+	}
+	&_title
+	{
+		font-family: $roboto;
+		font-size: 1rem;
+		color: black;
+		margin: 0.5rem 0.5rem;
+
+	}
+	&_text
+	{
+		font-family: $roboto;
+		font-size: 0.9rem;
+		color: black;
+		margin: 0.5rem 0.5rem;
+	}
+	&_heart
+	{
+		width: 19%;
+	}
+	&_heart_ept
+	{
+		width: 1rem;
+	}
+	&_heart_full
+	{
+		width: 1rem;
 	}
 }
 
