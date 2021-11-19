@@ -456,4 +456,18 @@ body {
 .info_restaurant_heart_full {
   width: 1rem;
 }
+
+/*Footer*/
+.footer {
+  margin: auto;
+  width: 100%;
+}
+
+.footer_menu {
+  width: 70%;
+}
+
+.footer_img {
+  width: 10rem;
+}
 /*# sourceMappingURL=style.css.map */

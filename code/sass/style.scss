@@ -323,6 +323,19 @@ margin: auto;
 		width: 1rem;
 	}
 }
-
-
+/*Footer*/
+.footer
+{
+	margin: auto;
+	width: 100%;
+	&_menu
+	{
+		width: 70%;
+	}
+	&_img
+	{
+		width: 10rem;
+		
+	}
+}
 /*# sourceMappingURL=style.css.map */
