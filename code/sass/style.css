@@ -24,9 +24,9 @@
   color: white;
   font-family: 'Roboto';
   border-radius: 2rem;
-  width: 12rem;
+  width: 13rem;
   margin: auto;
-  height: 2.5rem;
+  height: 2.8rem;
   border: none;
   -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
           box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
@@ -142,7 +142,7 @@ body {
 }
 
 .hero_wrapper_inside {
-  width: 18rem;
+  width: 23rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,11 +158,11 @@ body {
 
 .hero_title {
   margin: auto;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
   font-family: "Roboto";
   text-align: center;
-  width: 80%;
+  width: 70%;
 }
 
 .hero_text_wrapper {
@@ -181,7 +181,8 @@ body {
 /*features*/
 .global_features {
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 1.7rem;
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +196,7 @@ body {
 }
 
 .features_title {
-  margin-left: 1.6rem;
+  margin-left: 1.1rem;
   font-family: "Roboto";
 }
 
@@ -231,9 +232,9 @@ body {
           align-items: center;
   font-size: 1rem;
   height: 4rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 1.2rem;
   width: 100%;
   -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
           box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
@@ -325,6 +326,7 @@ body {
 
 .features_ictext {
   font-family: "Roboto";
+  font-weight: 600;
 }
 
 /*Restaurants*/
@@ -338,10 +340,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
+  padding-bottom: 3rem;
 }
 
 .restaurants_title {
   font-family: "Roboto";
+  margin-left: 1.1rem;
 }
 
 .restaurants_list {
@@ -369,6 +373,8 @@ body {
   border-radius: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .restaurants_card_href {
@@ -403,7 +409,7 @@ body {
 
 .restaurants_img {
   width: 100%;
-  height: 11.5rem;
+  height: 12rem;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0px;
@@ -433,16 +439,16 @@ body {
 
 .info_restaurant_title {
   font-family: "Roboto";
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: black;
-  margin: 0.5rem 0.5rem;
+  margin: 0.6rem 0.5rem 0.1rem 0.6rem;
 }
 
 .info_restaurant_text {
   font-family: "Roboto";
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: black;
-  margin: 0.5rem 0.5rem;
+  margin: 0.3rem 0.5rem 0.7rem 0.6rem;
 }
 
 .info_restaurant_heart {
@@ -460,14 +466,43 @@ body {
 /*Footer*/
 .footer {
   margin: auto;
+  background: #363636;
   width: 100%;
 }
 
 .footer_menu {
   width: 70%;
+  height: 15rem;
 }
 
 .footer_img {
-  width: 10rem;
+  width: 6rem;
+  padding-left: 2.2rem;
+  margin-top: 2rem;
+}
+
+.footer_element {
+  list-style: none;
+  margin: 0.5rem 0rem;
+}
+
+.footer_element_href {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer_icona {
+  width: 0.8rem;
+  margin-right: 0.6rem;
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.footer_iconb {
+  width: 1rem;
+  margin-right: 0.6rem;
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 /*# sourceMappingURL=style.css.map */
