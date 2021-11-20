@@ -96,7 +96,7 @@ body{
 	}
 	&_text_wrapper
 	{
-		font-size: 11.rem;
+		font-size: 1rem;
 		text-align: center;
 		font-family: $roboto;
 		font-weight: 350;
@@ -247,7 +247,7 @@ padding-bottom: 3rem;
 		display: flex;
 		flex-direction: column;
 		margin: auto;
-		width: 85%;
+		width: 90%;
 		border-radius: 1rem;
 		margin-top: 0.5rem;
 		margin-bottom: 0.5rem; box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
@@ -312,9 +312,9 @@ padding-bottom: 3rem;
 	&_text
 	{
 		font-family: $roboto;
-		font-size: 1rem;
+		font-size: 1.1rem;
 		color: black;
-		margin: 0.3rem 0.5rem 0.7rem 0.6rem;
+		margin: 0.1rem 0.5rem 0.8rem 0.6rem;
 	}
 	&_heart
 	{
@@ -338,7 +338,7 @@ padding-bottom: 3rem;
 	&_menu
 	{
 		width: 70%;
-		height: 15rem;
+		height: 14rem;
 	}
 	&_img
 	{

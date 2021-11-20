@@ -369,7 +369,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
-  width: 85%;
+  width: 90%;
   border-radius: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -446,9 +446,9 @@ body {
 
 .info_restaurant_text {
   font-family: "Roboto";
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: black;
-  margin: 0.3rem 0.5rem 0.7rem 0.6rem;
+  margin: 0.1rem 0.5rem 0.8rem 0.6rem;
 }
 
 .info_restaurant_heart {
@@ -472,7 +472,7 @@ body {
 
 .footer_menu {
   width: 70%;
-  height: 15rem;
+  height: 14rem;
 }
 
 .footer_img {
