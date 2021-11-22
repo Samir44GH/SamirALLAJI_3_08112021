@@ -577,4 +577,83 @@ body {
     margin: 0em;
   }
 }
+
+@media all and (min-width: 990.9px) {
+  .header_logo {
+    width: 20rem;
+  }
+  .header_title {
+    font-size: 1.8rem;
+  }
+  .header_text_wrapper {
+    font-size: 1.3rem;
+  }
+  .header_btn {
+    width: 15rem;
+    height: 3rem;
+    font-size: 15px;
+  }
+  .features_title {
+    font-size: 2rem;
+    margin-left: 2.1rem;
+  }
+  .features_list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .features_element {
+    margin: 1rem;
+    width: 30%;
+  }
+  .features_icona {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .features_iconb {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .features_ictext {
+    font-size: 18px;
+  }
+  .restaurants_title {
+    font-size: 2rem;
+    margin-left: 2.1rem;
+  }
+  .restaurants_list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .restaurants_card {
+    width: 45%;
+    margin: 1rem;
+  }
+  .restaurants_img {
+    height: 20rem;
+  }
+  .footer_list {
+    width: 70%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer_element {
+    padding: 2rem 0rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

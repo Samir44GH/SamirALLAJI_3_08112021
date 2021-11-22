@@ -361,6 +361,95 @@ padding-bottom: 3rem;
 	}
 }
 
-
-
+@media all and(min-width: 990.9px)/*Le CSS s'appliquera aux desktop*/
+{
+	.header{
+		&_logo
+	{
+		width: 20rem;
+	}
+		&_title
+		{
+			font-size: 1.8rem;
+		}
+		&_text_wrapper
+		{
+			font-size: 1.3rem;
+		}
+		&_btn
+		{
+			width: 15rem;
+    		height: 3rem;
+    		font-size: 15px;
+		}
+	}
+	.features 
+	{
+		&_title
+		{
+			font-size: 2rem;
+    		margin-left: 2.1rem;
+		}
+		&_list
+		{
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+		}
+		&_element
+		{
+			margin:1rem;
+			width: 30%;
+		}
+		&_icona
+		{
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
+		&_iconb
+		{
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
+		&_ictext
+		{
+			font-size: 18px;
+		}
+	}
+	.restaurants
+	{
+		&_title
+		{
+			font-size: 2rem;
+    		margin-left: 2.1rem;
+		}
+		&_list
+		{
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&_card
+		{
+			width: 45%;
+			margin: 1rem;
+		}
+		&_img
+		{
+			height: 20rem;
+		}
+	}
+	.footer{
+		&_list
+		{
+			width: 70%;
+			justify-content: space-between;
+		}
+		&_element
+		{
+			padding: 2rem 0rem;
+		}
+	}
+}
 /*# sourceMappingURL=style.css.map */
