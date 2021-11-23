@@ -1,8 +1,9 @@
-@import "libs/utils/vairiables";
-@import "libs/layout/header";
+@import "libs/utils/variables";
+@import "libs/utils/mixins";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
+@import "libs/layout/header";
 @import "libs/components/btn";
-@import "libs/pages/mtablette";
+
 /*.border 
 {
 	border: 1px solid black;
@@ -32,25 +33,21 @@ body{
 /*Loading spinner*/
 .loading
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100%;
+    @include flex_center;
+    height: 100%;
     width: 100%;
-	margin: 0px;
+	margin-top: -16px;
 	padding: 0px;
-    background-color:rgba($color: #ffffff, $alpha: .8); 
-   position: fixed;
-   opacity: 1;
-   z-index:1000;
+    background-color:rgba($color: #ffffff, $alpha: .9); 
+	position: fixed;
+	opacity: 1;
+	z-index: 10000;
    animation: loaderdisappear 1s ease both;
    animation-delay: 2.2s;
 }
 
 .loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex_center;
     width: 100px;
     height: 120px;
   }
@@ -106,8 +103,6 @@ body{
   }
 }
 
-
-
 @keyframes spinreverse
 {
   0%
@@ -124,7 +119,7 @@ body{
 {
     to{
         opacity: 0;
-        z-index: -10;
+		z-index: -10;
     }
 }
 
@@ -136,15 +131,11 @@ body{
 /*hero*/
 .hero 
 {
-	display: flex;
-	
-	flex-direction: column;
+	@include flex_column;
 	
 	&_location
 	{
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		@include flex_center;
 		height: 3rem;
 		background: $color_hero;
 		margin-bottom: 0px;
@@ -156,7 +147,6 @@ body{
 		font-family: $roboto;
 		font-weight: 600;
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 		width: 8.5rem;
     	margin-left: -2rem;
@@ -181,8 +171,7 @@ body{
 	&_wrapper_inside
 	{
 		width: 23rem;
-		display: flex;
-		flex-direction: column;
+		@include flex_column;
 		justify-content: center;
 		margin-top: 2rem;
 	}
@@ -215,8 +204,7 @@ body{
 	margin: auto;
 	margin-top: 1.7rem;
 	margin-bottom: 3rem;
-	display: flex;
-	flex-direction: column;
+	@include flex_column;
 	justify-content: center;
 }
 
@@ -229,9 +217,8 @@ body{
 	}
 	&_list
 	{
-		display: flex;
+		@include flex_column;
 		list-style: none;
-		flex-direction: column;
 		margin: auto;
 		padding: 0rem;
 		width: 90%;
@@ -241,8 +228,7 @@ body{
 .restaurants
 {
 background: $color_wrapper;
-display: flex;
-flex-direction: column;
+@include flex_column;
 margin: auto;
 padding-bottom: 3rem;
 	&_title
@@ -252,22 +238,19 @@ padding-bottom: 3rem;
 	}
 	&_list
 	{
-		display: flex;
-		flex-direction: column;
+		@include flex_column;
 		width: 100%;
 		margin: auto;
 	}
 	&_card
 	{
-		display: flex;
-		flex-direction: column;
+		@include flex_column;
 		margin: auto;
 		width: 90%;
 		border-radius: 1rem;
 		margin-top: 0.5rem;
-		margin-bottom: 0.5rem; box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-		7px 7px 20px 0px rgba(0,0,0,.1),
-		4px 4px 5px 0px rgba(0,0,0,.1);
+		margin-bottom: 0.5rem; 
+		@include box_shadow_btn;
 	}
 	&_card_href
 	{
@@ -277,17 +260,13 @@ padding-bottom: 3rem;
 		background: white;
 		border-radius: 1rem;
 		&:hover
-		{
-			
-		box-shadow:-2px 7px 13px 33px rgba(168,98,252,0.6);
-		
+		{	
+		box-shadow:0px 0px 26px 12px rgba(147,86,220,0.51);
 		}
 	}
 	&_img_nouveau
 		{
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			@include flex_center;
 			position: absolute;
 			top: 10px;
 			right: 10px;
@@ -448,10 +427,8 @@ padding-bottom: 3rem;
 		&_menu
 		{
 			width: 100%;
-			display: flex;
+			@include flex_center;
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
 		}
 		&_list
 		{

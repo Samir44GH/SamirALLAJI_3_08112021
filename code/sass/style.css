@@ -18,7 +18,6 @@
 }
 
 .hero_btn {
-  background: #9356DC;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   color: white;
@@ -34,12 +33,9 @@
   margin-bottom: 3rem;
 }
 
-.hero_btn:before {
-  height: 0%;
-  width: 2px;
-}
-
 .hero_btn:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#c2a1eb), to(#ffade8));
+  background: linear-gradient(0deg, #c2a1eb 0%, #ffade8 100%);
   -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
@@ -159,15 +155,6 @@
   font-weight: 600;
 }
 
-@media all and (min-width: 767.9px) {
-  .hero_wrapper {
-    width: 100%;
-  }
-  .hero_wrapper_inside {
-    width: 100%;
-  }
-}
-
 /*.border 
 {
 	border: 1px solid black;
@@ -208,12 +195,12 @@ body {
           align-items: center;
   height: 100%;
   width: 100%;
-  margin: 0px;
+  margin-top: -16px;
   padding: 0px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   opacity: 1;
-  z-index: 1000;
+  z-index: 10000;
   -webkit-animation: loaderdisappear 1s ease both;
           animation: loaderdisappear 1s ease both;
   -webkit-animation-delay: 2.2s;
@@ -369,10 +356,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -466,11 +449,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  list-style: none;
   margin: auto;
   padding: 0rem;
   width: 90%;
@@ -533,8 +516,8 @@ body {
 }
 
 .restaurants_card_href:hover {
-  -webkit-box-shadow: -2px 7px 13px 33px rgba(168, 98, 252, 0.6);
-          box-shadow: -2px 7px 13px 33px rgba(168, 98, 252, 0.6);
+  -webkit-box-shadow: 0px 0px 26px 12px rgba(147, 86, 220, 0.51);
+          box-shadow: 0px 0px 26px 12px rgba(147, 86, 220, 0.51);
 }
 
 .restaurants_img_nouveau {
@@ -697,16 +680,16 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer_list {
     width: 90%;
