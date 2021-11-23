@@ -340,11 +340,14 @@ padding-bottom: 3rem;
 		width: 70%;
 		height: 14rem;
 	}
-	&_img
+	&_title
 	{
-		width: 6rem;
-		padding-left: 2.2rem;	
-		margin-top: 2rem;
+		font-family: $shrikhand;
+		font-size: 1.3rem;
+		color: white;
+		font-weight: 500;
+		padding: 2rem 0rem 0rem 2.2rem;
+		margin: 0%;
 	}
 	&_element
 	{
@@ -418,11 +421,12 @@ padding-bottom: 3rem;
 		}
 	}
 	.footer{
-		&_img
+		&_title
 		{
-			width: 15rem;
+			font-size: 1.8rem;
 			padding: 0em;
 			margin: 0em;
+			text-align: center;
 		}
 		&_menu
 		{

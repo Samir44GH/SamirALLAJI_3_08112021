@@ -610,10 +610,13 @@ body {
   height: 14rem;
 }
 
-.footer_img {
-  width: 6rem;
-  padding-left: 2.2rem;
-  margin-top: 2rem;
+.footer_title {
+  font-family: "Shrikhand";
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 500;
+  padding: 2rem 0rem 0rem 2.2rem;
+  margin: 0%;
 }
 
 .footer_element {
@@ -670,10 +673,11 @@ body {
   .restaurants_img {
     height: 25rem;
   }
-  .footer_img {
-    width: 15rem;
+  .footer_title {
+    font-size: 1.8rem;
     padding: 0em;
     margin: 0em;
+    text-align: center;
   }
   .footer_menu {
     width: 100%;
