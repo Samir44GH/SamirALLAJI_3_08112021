@@ -264,8 +264,8 @@ body {
   font-weight: 600;
   display: flex;
   justify-content: space-between;
-  width: 8.5rem;
-  margin-left: -2rem;
+  width: 9rem;
+  margin-left: -2.5rem;
 }
 .hero_icon {
   display: flex;
