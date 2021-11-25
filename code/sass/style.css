@@ -423,23 +423,23 @@ body {
   justify-content: center;
   align-items: center;
   -webkit-text-stroke: 2px white;
-  align-items: center;
-  justify-content: flex-end;
   margin: auto;
   padding-bottom: 4px;
+  border: 1px solid transparent;
 }
 .info_restaurant_heart:hover > .heart_empty {
   opacity: 1;
-  font-weight: 600;
+  font-weight: bold;
   -webkit-animation: heart 500ms ease-in-out;
           animation: heart 500ms ease-in-out;
   background-image: linear-gradient(#9356dc 0%, #ff79da 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 0px white;
+  -webkit-text-stroke: 1px rgba(147, 86, 220, 0.3);
   width: 2.1rem;
   color: transparent;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 @-webkit-keyframes heart {
