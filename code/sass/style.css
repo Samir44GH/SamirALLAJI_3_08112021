@@ -437,7 +437,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 0px white;
-  width: 2rem;
+  width: 2.1rem;
   color: transparent;
   cursor: pointer;
 }
