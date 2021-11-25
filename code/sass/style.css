@@ -428,6 +428,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-text-stroke: 2px white;
   align-items: center;
   justify-content: flex-end;
   margin: auto;
@@ -435,12 +436,13 @@ body {
 }
 .info_restaurant_heart:hover > .heart_empty {
   opacity: 1;
-  font-weight: bold;
+  font-weight: bolder;
   -webkit-animation: heart 500ms ease-in-out;
           animation: heart 500ms ease-in-out;
   background-image: linear-gradient(#9356dc 0%, #ff79da 100%);
   background-clip: text;
   -webkit-background-clip: text;
+  -webkit-text-stroke: 0px white;
   color: transparent;
   cursor: pointer;
 }
