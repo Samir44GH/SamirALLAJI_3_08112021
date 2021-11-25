@@ -15,10 +15,7 @@
 
 .hero_btn:hover {
 	background: linear-gradient(0deg, #c2a1eb 0%, #ffade8 100%);
-    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-                -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-      inset -4px -4px 6px 0 rgba(255,255,255,.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+    @include box_shadow_hover;
   }
 
   .features
@@ -42,6 +39,7 @@
 		@include box_shadow_btn;
 		&:hover{
 			background-color: lighten($color_primary, 30%);
+			@include box_shadow_hover;
 		}
 	}
 	&_under_elt
@@ -62,6 +60,10 @@
 		color: white;
 		padding: 2px;
 		margin-left: -6px;
+		@include box_shadow_btn;
+		&:hover {
+			@include box_shadow_hover;
+		}
 		
 	}
 	&_icona
@@ -91,10 +93,7 @@
 	}
 	&_icond
 	{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin:auto;
+		@include flex_center;
 		
 	}
 	&_ictext
