@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="sass/restaurants.css">
     <link rel="stylesheet" type="text/css" href="sass/normalize.css">
     <script src="https://kit.fontawesome.com/dc2f34578e.js" crossorigin="anonymous"></script>
     <title>Ohmyfood-La palette du goût</title>
@@ -17,16 +17,16 @@
 
      <!--Header-->
      <header class="header border black">
-        <a href="index.html"><img src="images/svg/arrow-alt-circle-left.svg" class="header__arrow" alt="logo retour page accueil "></a>
+        <a href="index.html"><img src="images/svg/arrow-left.svg" class="header_arrow" alt="logo retour page accueil "></a>
         <img src="images/logo/ohmyfood.png" alt="Logo Oh my food" class="header_logo border red">
     </header>
     <main class="main">
         <div class="div_img">
-            <img src="images/restaurants/la_palette_du_gout.jpg" alt="plat gastronomique au restaurant de la palette du goût" class="header_main_img">
+            <img src="images/restaurants/la_palette_du_gout.jpg" alt="plat gastronomique au restaurant de la palette du goût" class="main_img">
         </div>
         <section class="menu">
             <div class="menu_title">
-                <h1 class="menu_title_h1">À la française</h1>
+                <h1 class="menu_title_h1">La palette du goût</h1>
                 <div class="menu_title_heart border black">
                     <i class="far fa-heart heart_empty"></i>
                 </div>
@@ -38,7 +38,7 @@
                         <div class="menu_list_element">
                             <div class="menu_list_description">
                                 <h2 class="menu_list_description_title">Fricassée d'escargot</h2>
-                                <p class="starters_description_text">Au piment d'Espelette </p>
+                                <p class="menu_list_description_text">Au piment d'Espelette </p>
                             </div>
                             <div class="menu_list_price">25€</div>
                             <div class="menu_list_checkbox">
@@ -68,12 +68,12 @@
                     </div>
                 </article>
                 <article class="menu_list">
-                    <h1 class="menu_list_title">Plats</h1>
+                    <h1 class="menu_list_title_h2">Plats</h1>
                     <div class="menu_list_listing">
                         <div class="menu_list_element">
                             <div class="menu_list_description">
                                 <h2 class="menu_list_description_title">Filet de boeuf aux herbes</h2>
-                                <p class="starters_description_text">Accompagné de sa ribambelle de légumes </p>
+                                <p class="menu_list_description_text">Accompagné de sa ribambelle de légumes </p>
                             </div>
                             <div class="menu_list_price">40€</div>
                             <div class="menu_list_checkbox">
@@ -103,12 +103,12 @@
                     </div>
                 </article>
                 <article class="menu_list">
-                    <h1 class="menu_list_title">Desserts</h1>
+                    <h1 class="menu_list_title_h2">Desserts</h1>
                     <div class="menu_list_listing">
                         <div class="menu_list_element">
                             <div class="menu_list_description">
                                 <h2 class="menu_list_description_title">Paris-Brest</h2>
-                                <p class="starters_description_text">Revisité</p>
+                                <p class="menu_list_description_text">Revisité</p>
                             </div>
                             <div class="menu_list_price">18€</div>
                             <div class="menu_list_checkbox">
@@ -138,6 +138,7 @@
                     </div>
                 </article>
             </div>
+            <button class="button__standard  commander">Commander</button>
         </section>
     </main>
     <!--Footer-->

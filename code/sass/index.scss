@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
 @import "libs/layout/header";
 @import "libs/components/btn";
+@import "libs/layout/footer";
 
 /*.border 
 {
@@ -366,50 +367,6 @@ padding-bottom: 3rem;
 		font-size: 2rem;
 		color: black;
 		font-weight: 300;
-}
-/*Footer*/
-.footer
-{
-	margin: auto;
-	background: $color_footer;
-	width: 100%;
-	&_menu
-	{
-		width: 70%;
-		height: 14rem;
-	}
-	&_title
-	{
-		font-family: $shrikhand;
-		font-size: 1.3rem;
-		color: white;
-		font-weight: 500;
-		padding: 2rem 0rem 0rem 2.2rem;
-		margin: 0%;
-	}
-	&_element
-	{
-		list-style: none;
-		margin: 0.5rem 0rem;
-		&_href
-		{
-			text-decoration: none;
-			color: white;
-			font-size: 1.2rem;
-		}
-	}
-	&_icona
-	{
-		width: 0.8rem;
-		margin-right: 0.6rem;
-		filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-	}
-	&_iconb
-	{
-		width: 1rem;
-		margin-right: 0.6rem;
-		filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-	}
 }
 
 @media all and(min-width: 767.9px)/*Le CSS s'appliquera aux tablettes*/

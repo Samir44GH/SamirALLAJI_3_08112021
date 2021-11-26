@@ -1,0 +1,249 @@
+@import "libs/utils/variables";
+@import "libs/utils/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
+@import "libs/layout/header";
+@import "libs/components/btn";
+@import "libs/layout/footer";
+
+/*.border 
+{
+	border: 1px solid black;
+		
+	}
+
+	.red {
+		border-color: red;
+	}
+	
+	.green {
+		border-color: green;
+	}
+	
+	.blue {
+		border-color: blue;
+	}
+	
+	.purple {
+		border-color: #a70da7;
+}*/
+
+body{
+	margin: auto;
+	box-sizing: border-box;
+}
+/*Loading spinner*/
+.loading
+{
+    @include flex_center;
+    height: 100%;
+    width: 100%;
+	margin-top: -16px;
+	padding: 0px;
+    background-color:rgba($color: #ffffff, $alpha: .9); 
+	position: fixed;
+	opacity: 1;
+	z-index: 10000;
+   animation: loaderdisappear 1s ease both;
+   animation-delay: 2.2s;
+}
+
+.loader {
+    @include flex_center;
+    width: 100px;
+    height: 120px;
+  }
+/*Loader: triple cercle*/
+
+.load_circles
+{
+  border-radius: 50px;
+  border: 5px solid transparent;
+  border-top-color:#9356DC;
+  animation: spin 1s linear infinite;
+  
+  &:after
+{
+  content:'';
+  border-radius: 50px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  bottom: 7px; 
+  right: 7px;
+  border: 5px solid transparent;
+  border-top-color:#FF79DA;
+  opacity: 0.8;
+  animation: spin 5s linear infinite;
+}
+&:before
+{
+  content:'';
+  border-radius: 50px;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  bottom:22px; 
+  right: 22px;
+  border: 5px solid transparent;
+  border-top-color:#99E2D0;
+  opacity: 0.6;
+  animation: spin 10s linear infinite;
+  
+ }
+}
+
+@keyframes spin
+{
+  0%
+  {
+    transform: rotate(Odeg);
+  }
+  100%
+  {
+    transform:rotate(360deg)
+  }
+}
+
+@keyframes spinreverse
+{
+  0%
+  {
+    transform: rotate(Odeg);
+  }
+  100%
+  {
+    transform:rotate(-360deg)
+  }
+}
+
+@keyframes loaderdisappear
+{
+    to{
+        opacity: 0;
+		z-index: -10;
+    }
+}
+
+.main
+{
+    @include flex_center;
+    flex-direction: column;
+    &_img{
+        width: 100%;
+    }
+}
+.menu
+{ width: 100%;
+    margin: auto;
+    @include flex_center;
+    flex-direction: column;
+    background-color: $color_wrapper;
+    border-radius: 2.5rem 2.5rem 0rem 0rem;
+    margin-top: -3rem;
+    &_title
+    {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 0.8rem;
+        &_h1
+        {
+            font-family: $shrikhand;
+            font-size: 1.7rem;
+            font-weight: 500;
+            width: 78%;
+            display: flex;
+            justify-content: center
+        }
+    }
+    &_title_heart
+	{
+		@include flex_center;
+		-webkit-text-stroke: 1px white;
+		margin:auto;
+		padding-bottom: 4px;
+		border: 1px solid transparent;
+		&:hover {
+			& > .heart_empty{
+				opacity: 1;
+				font-weight : bold;
+				animation: heart 500ms ease-in-out;
+				background-image: linear-gradient(
+				  rgba(147, 86, 220, 1) 0%,
+				  rgba(255, 121, 218, 1) 100%);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-stroke: 1px rgba(147, 86, 220, 0.3);
+				color: transparent;
+				cursor: pointer;
+				border: 1px solid transparent;
+			}
+		}
+	}
+    &_wrapper
+    {
+        width: 92%;
+    }
+    &_list_title_h2 
+    {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: $roboto;
+    }
+    &_list_element
+    {
+        background: white;
+        display: flex;
+        align-items: center;
+        border-radius: 1rem;
+        margin: 0.5rem 0rem;
+    }
+    &_list_description
+    {
+        margin: 7px 7px;
+        width: 85%;
+        &_title
+        {
+            padding: 2px;
+            margin: auto;
+            font-family: $roboto;
+            font-size: 1rem;
+        }
+        &_text
+        {
+            padding: 2px;
+            margin: auto;
+        }
+    }
+    &_list_price
+    {
+        display: flex;
+        align-items: flex-end;
+        height: 42px;
+        font-weight: 600.
+    }
+}
+@keyframes heart {
+	0% {
+	  opacity: 0%;
+	}
+	25% {
+	  opacity: 25%;
+	}
+	50% {
+		opacity: 50%;
+	  }
+	  75% {
+		opacity: 75%;
+	  }
+	100% {
+	  opacity: 100;
+	}
+  }
+.heart_empty 
+{
+		font-size: 1.5rem;
+		color: black;
+		font-weight: 500;
+}
+
