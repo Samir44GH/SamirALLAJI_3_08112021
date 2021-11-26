@@ -332,8 +332,7 @@ padding-bottom: 3rem;
 				animation: heart 500ms ease-in-out;
 				background-image: linear-gradient(
 				  rgba(147, 86, 220, 1) 0%,
-				  rgba(255, 121, 218, 1) 100%
-				);
+				  rgba(255, 121, 218, 1) 100%);
 				background-clip: text;
 				-webkit-background-clip: text;
 				-webkit-text-stroke: 1px rgba(147, 86, 220, 0.3);
@@ -346,13 +345,22 @@ padding-bottom: 3rem;
 	}
 }
 @keyframes heart {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+	0% {
+	  opacity: 0%;
+	}
+	25% {
+	  opacity: 25%;
+	}
+	50% {
+		opacity: 50%;
+	  }
+	  75% {
+		opacity: 75%;
+	  }
+	100% {
+	  opacity: 100;
+	}
+  }
 .heart_empty 
 {
 		font-size: 2rem;
