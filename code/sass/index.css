@@ -475,8 +475,8 @@ body {
 .info_restaurant_heart:hover > .heart_empty {
   opacity: 1;
   font-weight: bold;
-  -webkit-animation: heart 500ms ease-in-out;
-          animation: heart 500ms ease-in-out;
+  -webkit-animation: heart 2s ease-in-out;
+          animation: heart 2s ease-in-out;
   background-image: linear-gradient(#9356dc 0%, #ff79da 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -490,36 +490,22 @@ body {
 @-webkit-keyframes heart {
   0% {
     opacity: 0%;
-  }
-  25% {
-    opacity: 25%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  75% {
-    opacity: 75%;
+    transform: scale(0);
   }
   100% {
     opacity: 100;
+    transform: scale(1);
   }
 }
 
 @keyframes heart {
   0% {
     opacity: 0%;
-  }
-  25% {
-    opacity: 25%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  75% {
-    opacity: 75%;
+    transform: scale(0);
   }
   100% {
     opacity: 100;
+    transform: scale(1);
   }
 }
 .heart_empty {

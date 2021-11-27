@@ -158,16 +158,14 @@ body{
     }
     &_title_heart
 	{
-		@include flex_center;
 		-webkit-text-stroke: 1px white;
 		margin:auto;
-		padding-bottom: 4px;
 		border: 1px solid transparent;
 		&:hover {
 			& > .heart_empty{
-				opacity: 1;
+				
 				font-weight : bold;
-				animation: heart 500ms ease-in-out;
+				animation: heart 2s ease-in-out;
 				background-image: linear-gradient(
 				  rgba(147, 86, 220, 1) 0%,
 				  rgba(255, 121, 218, 1) 100%);
@@ -220,12 +218,13 @@ body{
         display: flex;
         align-items: flex-end;
         height: 42px;
-        font-weight: 600.
+        font-weight: 600;
     }
 }
 @keyframes heart {
 	0% {
 	  opacity: 0%;
+    transform: scale(0);
 	}
 	25% {
 	  opacity: 25%;
@@ -238,6 +237,7 @@ body{
 	  }
 	100% {
 	  opacity: 100;
+    transform: scale(1);
 	}
   }
 .heart_empty 
@@ -245,5 +245,10 @@ body{
 		font-size: 1.5rem;
 		color: black;
 		font-weight: 500;
+}
+
+.btn_standard
+{
+  @include btn;
 }
 

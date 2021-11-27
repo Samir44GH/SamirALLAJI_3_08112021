@@ -320,19 +320,14 @@ body {
   justify-content: center;
 }
 .menu_title_heart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   -webkit-text-stroke: 1px white;
   margin: auto;
-  padding-bottom: 4px;
   border: 1px solid transparent;
 }
 .menu_title_heart:hover > .heart_empty {
-  opacity: 1;
   font-weight: bold;
-  -webkit-animation: heart 500ms ease-in-out;
-          animation: heart 500ms ease-in-out;
+  -webkit-animation: heart 2s ease-in-out;
+          animation: heart 2s ease-in-out;
   background-image: linear-gradient(#9356dc 0%, #ff79da 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -373,11 +368,14 @@ body {
 .menu_list_price {
   display: flex;
   align-items: flex-end;
+  height: 42px;
+  font-weight: 600;
 }
 
 @-webkit-keyframes heart {
   0% {
     opacity: 0%;
+    transform: scale(0);
   }
   25% {
     opacity: 25%;
@@ -390,12 +388,14 @@ body {
   }
   100% {
     opacity: 100;
+    transform: scale(1);
   }
 }
 
 @keyframes heart {
   0% {
     opacity: 0%;
+    transform: scale(0);
   }
   25% {
     opacity: 25%;
@@ -408,10 +408,25 @@ body {
   }
   100% {
     opacity: 100;
+    transform: scale(1);
   }
 }
 .heart_empty {
   font-size: 1.5rem;
   color: black;
   font-weight: 500;
+}
+
+.btn_standard {
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  color: white;
+  font-family: "Roboto";
+  border-radius: 2rem;
+  width: 13rem;
+  margin: auto;
+  height: 2.8rem;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=restaurants.css.map */
