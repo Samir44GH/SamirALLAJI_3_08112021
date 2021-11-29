@@ -292,6 +292,11 @@ body {
 }
 .main_img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .div_img {
+  min-width: 100%;
 }
 
 .menu {
@@ -367,6 +372,7 @@ body {
   align-items: center;
   border-radius: 1rem;
   margin: 0.5rem 0rem;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .menu_list_description {
   margin: 7px 7px;
@@ -454,4 +460,156 @@ body {
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   margin-top: 0.5rem;
   margin-bottom: 3rem;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+@media all and (max-width: 370px) {
+  .menu_title_h1 {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 767.9px) {
+  .menu {
+    margin-top: -6rem;
+  }
+  .menu_wrapper {
+    width: 86%;
+  }
+  .menu_title_h1 {
+    font-size: 2.2rem;
+    width: 85%;
+  }
+  .menu_title_heart {
+    margin: 0%;
+  }
+  .menu_list_description {
+    width: 82%;
+  }
+  .menu_list_price {
+    font-size: 1.1rem;
+  }
+
+  .heart_empty {
+    font-size: 2rem;
+  }
+
+  .footer_title {
+    font-size: 1.8rem;
+    padding: 0em;
+    margin: 0em;
+    text-align: center;
+  }
+  .footer_menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer_list {
+    width: 90%;
+    display: flex;
+    padding: inherit;
+  }
+  .footer_element {
+    padding: 1rem;
+    margin: 0em;
+  }
+}
+@media all and (min-width: 990.9px) {
+  .header_arrow {
+    width: 1.8rem;
+    top: 6px;
+    left: 20px;
+  }
+  .header_logo {
+    width: 16rem;
+  }
+
+  .menu {
+    margin-top: -5rem;
+  }
+  .menu_title {
+    justify-content: space-between;
+    width: 50%;
+  }
+  .menu_title_h1 {
+    width: 87%;
+    justify-content: flex-end;
+    font-size: 2.6rem;
+  }
+  .menu_wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 99%;
+  }
+  .menu_list {
+    width: 32%;
+  }
+  .menu_list_description {
+    width: 83%;
+  }
+  .menu_list_element {
+    margin: 0.7rem 0rem;
+  }
+  .menu_list_price {
+    margin: 0;
+  }
+
+  .main_img {
+    height: 500px;
+  }
+
+  .footer_list {
+    width: 70%;
+    justify-content: space-between;
+  }
+  .footer_element {
+    padding: 2rem 0rem;
+  }
+}
+@media all and (min-width: 1200px) {
+  .main_img {
+    height: 537px;
+  }
+
+  .header_arrow {
+    width: 2.5rem;
+    top: 4px;
+    left: 28px;
+  }
+  .header_logo {
+    width: 20rem;
+  }
+
+  .menu_title {
+    width: 45%;
+  }
+  .menu_title_h1 {
+    width: 83%;
+    font-size: 3rem;
+  }
+  .menu_list_description {
+    width: 86%;
+  }
+
+  .heart_empty {
+    font-size: 2.5rem;
+  }
+}
+@media all and (min-width: 2000px) {
+  .menu_title {
+    width: 27%;
+  }
+  .menu_wrapper {
+    width: 95%;
+  }
+  .menu_list_price {
+    margin: auto;
+  }
+
+  .footer_list {
+    width: 78%;
+  }
 }/*# sourceMappingURL=restaurants.css.map */
