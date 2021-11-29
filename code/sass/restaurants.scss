@@ -182,11 +182,29 @@ body{
     {
         width: 92%;
     }
+    &_list
+    {
+      margin-top: 1rem;
+      margin-bottom: 2.5rem;
+      &_listing
+      {
+        margin-top: 1.3rem;
+      }
+    }
     &_list_title_h2 
     {
         text-transform: uppercase;
         font-size: 1rem;
         font-family: $roboto;
+        font-weight: 400;
+        padding-left: 0.4rem;
+    }
+    &_list_underline
+    {
+      text-decoration-line: underline;
+      text-decoration-color: $color_tertiary;
+      text-underline-offset: 0.4rem;
+      text-decoration-thickness: 0.2rem;
     }
     &_list_element
     {
@@ -199,18 +217,24 @@ body{
     &_list_description
     {
         margin: 7px 7px;
-        width: 85%;
+        width: 78%;
+       
         &_title
         {
-            padding: 2px;
+            padding: 4px 2px 2px 2px;
             margin: auto;
             font-family: $roboto;
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
         &_text
         {
-            padding: 2px;
+            padding: 3px;
             margin: auto;
+            font-family: $roboto;
+            font-size: 0.9rem;
+            text-overflow: ellipsis;
+            white-space: pre;
+            overflow: hidden;
         }
     }
     &_list_price
@@ -219,6 +243,9 @@ body{
         align-items: flex-end;
         height: 42px;
         font-weight: 600;
+        font-family: $roboto;
+        font-size: 0.9rem;
+        margin: auto;
     }
 }
 @keyframes heart {

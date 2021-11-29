@@ -339,10 +339,27 @@ body {
 .menu_wrapper {
   width: 92%;
 }
+.menu_list {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+.menu_list_listing {
+  margin-top: 1.3rem;
+}
 .menu_list_title_h2 {
   text-transform: uppercase;
   font-size: 1rem;
   font-family: "Roboto";
+  font-weight: 400;
+  padding-left: 0.4rem;
+}
+.menu_list_underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #99E2D0;
+          text-decoration-color: #99E2D0;
+  text-underline-offset: 0.4rem;
+  text-decoration-thickness: 0.2rem;
 }
 .menu_list_element {
   background: white;
@@ -353,23 +370,31 @@ body {
 }
 .menu_list_description {
   margin: 7px 7px;
-  width: 85%;
+  width: 78%;
 }
 .menu_list_description_title {
-  padding: 2px;
+  padding: 4px 2px 2px 2px;
   margin: auto;
   font-family: "Roboto";
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .menu_list_description_text {
-  padding: 2px;
+  padding: 3px;
   margin: auto;
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  white-space: pre;
+  overflow: hidden;
 }
 .menu_list_price {
   display: flex;
   align-items: flex-end;
   height: 42px;
   font-weight: 600;
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  margin: auto;
 }
 
 @-webkit-keyframes heart {
