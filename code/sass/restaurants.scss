@@ -240,13 +240,23 @@ body{
         }
         &_text
         {
-            padding: 3px;
+            padding: 3px 5px 3px 3px;
             margin: auto;
             font-family: $roboto;
             font-size: 0.8rem;
             text-overflow: ellipsis;
             white-space: pre;
             overflow: hidden;
+            &_2
+            {
+              padding: 3px 4px 3px 3px;
+            margin: auto;
+            font-family: $roboto;
+            font-size: 0.8rem;
+            text-overflow: ellipsis;
+            white-space: pre;
+            overflow: hidden;
+            }
         }
     }
     &_list_price

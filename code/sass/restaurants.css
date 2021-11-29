@@ -390,7 +390,16 @@ body {
   font-size: 1rem;
 }
 .menu_list_description_text {
-  padding: 3px;
+  padding: 3px 5px 3px 3px;
+  margin: auto;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: pre;
+  overflow: hidden;
+}
+.menu_list_description_text_2 {
+  padding: 3px 4px 3px 3px;
   margin: auto;
   font-family: "Roboto";
   font-size: 0.8rem;
