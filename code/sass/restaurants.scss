@@ -129,8 +129,14 @@ body{
     @include flex_center;
     flex-direction: column;
     &_img{
-        width: 100%;
-        object-fit: cover;
+      width: 100%;
+      object-fit: cover;
+        &_2
+        {
+          width: 100%;
+          object-fit: cover;
+          height: 280px;
+        }
     }
 .div_img
 {
@@ -149,16 +155,16 @@ body{
     {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: 89%;
         margin-top: 0.8rem;
         &_h1
         {
             font-family: $shrikhand;
             font-size: 1.7rem;
             font-weight: 500;
-            width: 78%;
+            width: 85%;
             display: flex;
-            justify-content: center
+            
         }
     }
     &_title_heart
@@ -185,7 +191,7 @@ body{
 	}
     &_wrapper
     {
-        width: 92%;
+        width: 94%;
     }
     &_list
     {
@@ -223,21 +229,21 @@ body{
     &_list_description
     {
         margin: 7px 7px;
-        width: 78%;
+        width: 81%;
        
         &_title
         {
             padding: 4px 2px 2px 2px;
             margin: auto;
             font-family: $roboto;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
         &_text
         {
             padding: 3px;
             margin: auto;
             font-family: $roboto;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             text-overflow: ellipsis;
             white-space: pre;
             overflow: hidden;
@@ -297,6 +303,10 @@ body{
 
 @media all and(min-width: 767.9px)/*Le CSS s'appliquera aux tablettes*/
 {
+  .main_img_2
+  {
+    height: 500px;
+  }
   .menu
   {
     margin-top: -6rem;
@@ -305,10 +315,14 @@ body{
     {
       width: 86%;
     }
+    &_title
+    {
+      width: 85%;
+    }
     &_title_h1
     {
       font-size: 2.2rem;
-      width: 85%;
+      width: 92%;
     }
     &_title_heart
     {
@@ -316,7 +330,7 @@ body{
     }
     &_list_description
     {
-      width: 82%;
+      width: 87%;
     }
     &_list_price
     {
@@ -357,6 +371,10 @@ body{
 
 @media all and(min-width: 990.9px)/*Le CSS s'appliquera aux desktop*/
 {
+  .main_img_2
+  {
+    height: 555px;
+  }
   .header
   {
     &_arrow
@@ -374,12 +392,12 @@ body{
     margin-top: -5rem;
     &_title
     {
-      justify-content: space-between;
-      width: 50%;
+      justify-content: flex-start;
+      width: 100%;
       &_h1
       {
-        width: 87%;
-        justify-content: flex-end;
+        width: 39%;
+        margin-left: 1.4rem;
         font-size: 2.6rem;
       }
     }
@@ -427,13 +445,17 @@ body{
 {
   .main_img
   {
-    height: 537px;
+    height: 600px;
+    &_2
+    {
+      height: 600px;
+    }
   }
   .header{
     &_arrow
     {
-      width: 2.5rem;
-      top: 4px;
+      width: 2rem;
+      top: 8px;
       left: 28px;
     }
     &_logo
@@ -442,19 +464,15 @@ body{
     }
   }
   .menu{
-    &_title
-    {
-      width: 45%;
-      &_h1
-      {
-        width: 83%;
-        font-size: 3rem;
-      }
-    }
+    
     &_list_description
     {
       width: 86%;
     }
+    &_title_h1
+  {
+    width: 27%;
+  }
   }
   .heart_empty
   {
@@ -466,7 +484,11 @@ body{
 .menu{
   &_title
   {
-    width: 27%;
+    width: 95%;
+    &_h1
+    {
+      width: 15%;
+    }
   }
   &_wrapper
   {

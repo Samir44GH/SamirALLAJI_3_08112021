@@ -8,13 +8,13 @@
 }
 .header_logo {
   display: flex;
-  width: 11rem;
+  width: 9rem;
 }
 .header_arrow {
   position: absolute;
-  top: 5px;
+  top: 4px;
   left: 17px;
-  width: 1.1rem;
+  width: 0.9rem;
 }
 
 .hero_btn {
