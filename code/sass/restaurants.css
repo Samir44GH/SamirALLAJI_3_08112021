@@ -12,9 +12,9 @@
 }
 .header_arrow {
   position: absolute;
-  top: 5px;
-  left: 17px;
-  width: 0.9rem;
+  top: 7px;
+  left: 12px;
+  width: 0.75rem;
 }
 
 @media all and (min-width: 767.9px) {
@@ -216,11 +216,10 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 280px;
+  height: 250px;
 }
 .main .div_img {
   min-width: 100%;
-  height: 250px;
 }
 
 .menu {
@@ -383,7 +382,7 @@ body {
 }
 
 .heart_empty {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: black;
   font-weight: 500;
 }
@@ -616,13 +615,12 @@ body {
   .menu_title {
     justify-content: flex-start;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 2em;
   }
   .menu_title_h1 {
     width: 39%;
     margin-left: 1.4rem;
     font-size: 2.6rem;
-    margin-right: 5rem;
   }
   .menu_wrapper {
     display: flex;
@@ -663,7 +661,6 @@ body {
   }
   .menu_title_h1 {
     width: 28%;
-    margin-right: 4rem;
   }
 
   .heart_empty {
