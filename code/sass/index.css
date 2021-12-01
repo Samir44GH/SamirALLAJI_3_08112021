@@ -2,8 +2,8 @@
 .header {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   position: relative;
 }
 .header_logo {
@@ -111,6 +111,25 @@
   font-weight: 600;
 }
 
+.btn_standard {
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  color: white;
+  font-family: "Roboto";
+  border-radius: 2rem;
+  width: 13rem;
+  margin: auto;
+  height: 2.8rem;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+.btn_standard:hover {
+  background: linear-gradient(0deg, #c2a1eb 0%, #ffade8 100%);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
 /*Footer*/
 .footer {
   margin: auto;
@@ -182,8 +201,8 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  margin-top: -16px;
-  padding: 0px;
+  margin-top: -10px;
+  padding: 10px;
   background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   opacity: 1;

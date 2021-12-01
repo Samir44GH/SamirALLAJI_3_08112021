@@ -1,16 +1,6 @@
 .hero_btn
 {
-   background: linear-gradient(0deg, $color_primary 0%, $color_secondary 100%);
-   color: white;
-   font-family: 'Roboto';
-   border-radius: 2rem;
-   width: 13rem;
-   margin: auto;
-   height: 2.8rem;
-   border: none;
-  @include box_shadow_btn;
-  margin-top: 0.5rem;
-  margin-bottom: 3rem; 
+   @include btn;
 }
 
 .hero_btn:hover {
@@ -102,5 +92,17 @@
 		font-weight: 600;
 		
 	}
+}
+
+.btn_standard
+{
+  @include btn;
+  
+  cursor: pointer;
+  &:hover
+  {
+	background: linear-gradient(0deg, #c2a1eb 0%, #ffade8 100%);
+	@include box_shadow_hover;
+  }
 }
   

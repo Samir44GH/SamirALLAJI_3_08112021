@@ -31,98 +31,6 @@ body{
 	margin: auto;
 	box-sizing: border-box;
 }
-/*Loading spinner*/
-.loading
-{
-    @include flex_center;
-    height: 100%;
-    width: 100%;
-	margin-top: -16px;
-	padding: 0px;
-    background-color:rgba($color: #ffffff, $alpha: .9); 
-	position: fixed;
-	opacity: 1;
-	z-index: 10000;
-   animation: loaderdisappear 1s ease both;
-   animation-delay: 2.2s;
-}
-
-.loader {
-    @include flex_center;
-    width: 100px;
-    height: 120px;
-  }
-/*Loader: triple cercle*/
-
-.load_circles
-{
-  border-radius: 50px;
-  border: 5px solid transparent;
-  border-top-color:#9356DC;
-  animation: spin 1s linear infinite;
-  
-  &:after
-{
-  content:'';
-  border-radius: 50px;
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  bottom: 7px; 
-  right: 7px;
-  border: 5px solid transparent;
-  border-top-color:#FF79DA;
-  opacity: 0.8;
-  animation: spin 5s linear infinite;
-}
-&:before
-{
-  content:'';
-  border-radius: 50px;
-  position: absolute;
-  top: 22px;
-  left: 22px;
-  bottom:22px; 
-  right: 22px;
-  border: 5px solid transparent;
-  border-top-color:#99E2D0;
-  opacity: 0.6;
-  animation: spin 10s linear infinite;
-  
- }
-}
-
-@keyframes spin
-{
-  0%
-  {
-    transform: rotate(Odeg);
-  }
-  100%
-  {
-    transform:rotate(360deg)
-  }
-}
-
-@keyframes spinreverse
-{
-  0%
-  {
-    transform: rotate(Odeg);
-  }
-  100%
-  {
-    transform:rotate(-360deg)
-  }
-}
-
-@keyframes loaderdisappear
-{
-    to{
-        opacity: 0;
-		z-index: -10;
-    }
-}
 
 .main
 {
@@ -131,6 +39,7 @@ body{
     &_img{
       width: 100%;
       object-fit: cover;
+      height: 250px;
         &_2
         {
           width: 100%;
@@ -141,6 +50,7 @@ body{
 .div_img
 {
   min-width: 100%;
+  height: 250px;
 }
 }
 .menu
@@ -162,9 +72,8 @@ body{
             font-family: $shrikhand;
             font-size: 1.7rem;
             font-weight: 500;
-            width: 85%;
-            display: flex;
-            
+            width: 91%;
+            display: flex; 
         }
     }
     &_title_heart
@@ -176,7 +85,7 @@ body{
 			& > .heart_empty{
 				
 				font-weight : bold;
-				animation: heart 2s ease-in-out;
+				animation: heart 1500ms ease-in-out;
 				background-image: linear-gradient(
 				  rgba(147, 86, 220, 1) 0%,
 				  rgba(255, 121, 218, 1) 100%);
@@ -225,11 +134,33 @@ body{
         border-radius: 1rem;
         margin: 0.5rem 0rem;
         @include box_shadow_btn;
+        animation: cardapparition 500ms ease-in-out;
+        opacity: 1;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &:hover {
+          & > .menu_list_description {
+              animation: checkboxAppear 700ms ease-in-out forwards;
+
+          }
+          & > .menu_list_checkbox {
+              animation: checkboxMargin 800ms ease-in-out forwards;
+          }
+          & .menu_list_checkbox_circle {
+              animation: logoSpin 800ms ease-in-out forwards;
+          }
+          & .menu_list_price {
+              animation: priceSlide 800ms ease-in-out forwards; 
+          }
+        }
     }
     &_list_description
     {
         margin: 7px 7px;
         width: 81%;
+        opacity: 1;
        
         &_title
         {
@@ -237,6 +168,9 @@ body{
             margin: auto;
             font-family: $roboto;
             font-size: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         &_text
         {
@@ -245,11 +179,11 @@ body{
             font-family: $roboto;
             font-size: 0.8rem;
             text-overflow: ellipsis;
-            white-space: pre;
+            white-space: nowrap;
             overflow: hidden;
             &_2
             {
-              padding: 3px 4px 3px 3px;
+              padding: 3px 5px 3px 3px;
             margin: auto;
             font-family: $roboto;
             font-size: 0.8rem;
@@ -264,11 +198,37 @@ body{
         display: flex;
         align-items: flex-end;
         height: 42px;
-        font-weight: 600;
         font-family: $roboto;
         font-size: 0.9rem;
         margin: auto;
+        position: absolute;
+        right: 9px;
+        bottom: 8px
     }
+    &_list_checkbox{
+      width: 60px;
+      height: 100%;
+      background: $color_tertiary;
+      color: black;
+      z-index: 1;
+      position: absolute;
+      right: -60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &_circle{
+          z-index: 2;
+          width: 22px;
+          height: 22px;
+          filter: invert(82%) sepia(100%) saturate(0%) hue-rotate(272deg) brightness(107%) contrast(107%);
+      }
+  }
+}
+.heart_empty 
+{
+		font-size: 1.5rem;
+		color: black;
+		font-weight: 500;
 }
 @keyframes heart {
 	0% {
@@ -279,29 +239,86 @@ body{
 	  opacity: 25%;
 	}
 	50% {
-		opacity: 50%;
+		opacity: 45%;
 	  }
 	  75% {
-		opacity: 75%;
+		opacity: 70%;
 	  }
 	100% {
-	  opacity: 100;
+	  opacity: 100%;
     transform: scale(1);
 	}
   }
-.heart_empty 
-{
-		font-size: 1.5rem;
-		color: black;
-		font-weight: 500;
+@keyframes cardapparition {
+  0% {
+    opacity: 0%;
+    transform: translateY(15px);
+  }
+  25% {
+    opacity: 25%;
+    transform: translateY(12px);
+    
+  }
+  50% {
+    opacity: 50%;
+    transform: translateY(7px);
+    }
+    75% {
+    opacity: 75%;
+    transform: translateY(4px);
+    }
+  100% {
+    opacity: 100;
+    transform: translateY(0px);
+  }
+  }
+@keyframes logoSpin {
+  from{
+      transform: rotate(0);
+  }
+  to{
+      transform: rotate(360deg);
+  }
+}
+@keyframes checkboxAppear {
+  from {
+    width: 100%;
+}
+  to{
+    width: 60%;
+  }
 }
 
-.btn_standard
-{
-  @include btn;
-  @include box_shadow_btn;
-  cursor: pointer;
+@keyframes checkboxMargin {
+  from {
+      right: -60px;
+  }
+  to{
+      right: 0px;
+  }
 }
+
+@keyframes priceSlide {
+  from {
+      right: 15px;
+  }
+  to{
+      right: 75px;
+  }
+}
+.delay1
+{
+  animation-delay: $card_delay1;
+}
+.delay2
+{
+  animation-delay: $card_delay2;
+}
+.delay3
+{
+  animation-delay: $card_delay3;
+}
+
 @media all and(max-width: 370px)
 {
   .menu_title_h1
@@ -313,13 +330,38 @@ body{
 
 @media all and(min-width: 767.9px)/*Le CSS s'appliquera aux tablettes*/
 {
-  .main_img_2
+  .main .div_img
   {
-    height: 500px;
+    height: 310px;
+  }
+  .div_img .main_img
+  {
+    height: 337px;
+    &_2
+    {
+      height: 337px;
+    }
+  }
+  .header
+  {
+    &_arrow
+    {
+      width:0.9rem;
+      top: 10px;
+      left: 20px;
+    }
+    &_logo
+    {
+      width: 13rem;
+    }
+  }
+  .main_img
+  {
+    height:276px;
   }
   .menu
   {
-    margin-top: -6rem;
+    margin-top: -0.5rem;
 
     &_wrapper
     {
@@ -381,34 +423,42 @@ body{
 
 @media all and(min-width: 990.9px)/*Le CSS s'appliquera aux desktop*/
 {
-  .main_img_2
-  {
-    height: 555px;
-  }
   .header
   {
     &_arrow
     {
-      width:1.8rem;
-      top: 6px;
-      left: 20px;
+      width:1.2rem;
+      top: 11px;
+      left: 22px;
     }
     &_logo
     {
       width: 16rem;
     }
   }
+  .main .div_img
+  {
+    height:400px;
+  }
+  .div_img .main_img{
+    height: 400px;
+    &_2{
+      height: 400px;
+    }
+  }
   .menu{
-    margin-top: -5rem;
+    margin-top: -4rem;
     &_title
     {
       justify-content: flex-start;
       width: 100%;
+      margin-top: 2rem;
       &_h1
       {
         width: 39%;
         margin-left: 1.4rem;
         font-size: 2.6rem;
+        margin-right: 5rem;
       }
     }
     &_wrapper
@@ -453,20 +503,24 @@ body{
 
 @media all and(min-width: 1200px)
 {
-  .main_img
+  .main .div_img
   {
-    height: 600px;
+    height:480px;
+  }
+  .div_img .main_img
+  {
+    height: 475px;
     &_2
-    {
-      height: 600px;
-    }
+  {
+    height: 475px;
+  }
   }
   .header{
     &_arrow
     {
-      width: 2rem;
-      top: 8px;
-      left: 28px;
+      width: 1.2rem;
+      top: 12px;
+      left: 23px;
     }
     &_logo
     {
@@ -481,7 +535,8 @@ body{
     }
     &_title_h1
   {
-    width: 27%;
+    width: 28%;
+    margin-right: 4rem;
   }
   }
   .heart_empty
@@ -491,6 +546,18 @@ body{
 }
 @media all and(min-width: 2000px)
 {
+  .main .div_img
+  {
+    height:586px;
+  }
+  .div_img .main_img
+  {
+    height: 557px;
+    &_2
+  {
+    height: 557px;
+  }
+  }
 .menu{
   &_title
   {
