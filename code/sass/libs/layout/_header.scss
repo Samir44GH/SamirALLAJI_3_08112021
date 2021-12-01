@@ -9,13 +9,76 @@
 	&_logo
 	{
 		display: flex;
-		width: 9rem;
+		width: 10rem;
 	}
 	&_arrow
 	{
 		position: absolute;
-		top: 4px;
+		top: 5px;
 		left: 17px;
 		width: 0.9rem;
 	}
+}
+@media all and(min-width: 767.9px)/*Le CSS s'appliquera aux tablettes*/
+{
+	.header
+  {
+    &_arrow
+    {
+      width:0.9rem;
+      top: 10px;
+      left: 20px;
+    }
+    &_logo
+    {
+      width: 13rem;
+    }
+  }
+}
+
+@media all and(min-width: 990.9px)/*Le CSS s'appliquera aux desktop*/
+{
+	.header
+  {
+    &_arrow
+    {
+      width:1.2rem;
+      top: 11px;
+      left: 22px;
+    }
+    &_logo
+    {
+      width: 16rem;
+    }
+	&_title
+		{
+			font-size: 1.8rem;
+		}
+		&_text_wrapper
+		{
+			font-size: 1.3rem;
+		}
+		&_btn
+		{
+			width: 15rem;
+    		height: 3rem;
+    		font-size: 15px;
+		}
+  	}
+}
+
+@media all and(min-width: 1200px)
+{
+	.header{
+		&_arrow
+		{
+		  width: 1.2rem;
+		  top: 12px;
+		  left: 23px;
+		}
+		&_logo
+		{
+		  width: 20rem;
+		}
+	  }
 }
