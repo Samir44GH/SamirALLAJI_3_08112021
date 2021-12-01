@@ -2,21 +2,21 @@
 {
 	display: flex;
 	justify-content: center;
-	margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+	margin-top: 1rem;
+    margin-bottom: 1rem;
 	position: relative;
 	
 	&_logo
 	{
 		display: flex;
-		width: 10rem;
+		width: 9rem;
 	}
 	&_arrow
 	{
 		position: absolute;
-		top: 7px;
-		left: 12px;
-		width: 0.75rem;
+		top: 4px;
+		left: 17px;
+		width: 0.9rem;
 	}
 }
 @media all and(min-width: 767.9px)/*Le CSS s'appliquera aux tablettes*/

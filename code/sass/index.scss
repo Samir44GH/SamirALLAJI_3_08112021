@@ -1,6 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
 @import "libs/utils/variables";
 @import "libs/utils/mixins";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
 @import "libs/layout/header";
 @import "libs/components/btn";
 @import "libs/layout/footer";
@@ -10,7 +11,6 @@
 	border: 1px solid black;
 		
 	}
-
 	.red {
 		border-color: red;
 	}
@@ -545,4 +545,3 @@ padding-bottom: 3rem;
 		}
 	}
 }
-/*# sourceMappingURL=style.css.map */
