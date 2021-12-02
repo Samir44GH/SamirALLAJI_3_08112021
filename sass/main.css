@@ -445,8 +445,8 @@ body {
   font-weight: 600;
   display: flex;
   justify-content: space-between;
-  width: 8.5rem;
-  margin-left: -1.9rem;
+  width: 8.1rem;
+  margin-left: -1rem;
 }
 .hero_icon {
   display: flex;
@@ -456,7 +456,7 @@ body {
   width: 0.7rem;
 }
 .hero_text {
-  font-weight: 550;
+  font-weight: 450;
   font-size: 1rem;
 }
 .hero_wrapper {
@@ -674,19 +674,20 @@ body {
   margin: 0.1rem 0.5rem 0.8rem 0.6rem;
 }
 .info_restaurant_heart {
+  color: black;
   -webkit-text-stroke: 2px white;
   margin: auto;
   border: 1px solid transparent;
 }
 .info_restaurant_heart:hover > .heart_empty {
   opacity: 1;
-  font-weight: 550;
+  font-weight: bold;
   -webkit-animation: heart 1500ms ease-in-out;
           animation: heart 1500ms ease-in-out;
   background-image: linear-gradient(#9356dc 0%, #ff79da 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 2px rgba(147, 86, 220, 0.3);
+  -webkit-text-stroke: 1px rgba(147, 86, 220, 0.3);
   color: transparent;
   cursor: pointer;
   border: 1px solid transparent;
@@ -732,7 +733,7 @@ body {
   }
 }
 .heart_empty {
-  font-size: 1rem;
+  font-size: 1.7rem;
   color: black;
   font-weight: 500;
 }
@@ -1023,7 +1024,7 @@ body {
 }
 
 .heart_empty {
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: black;
   font-weight: 500;
 }

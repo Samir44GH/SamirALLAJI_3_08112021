@@ -19,11 +19,11 @@
 	.purple {
 		border-color: #a70da7;
 }*/
-
 body{
 	margin: auto;
 	box-sizing: border-box;
 }
+
 /*Loading spinner*/
 .loading
 {
@@ -143,8 +143,8 @@ body{
 		font-weight: 600;
 		display: flex;
 		justify-content: space-between;
-		width: 8.5rem;
-    	margin-left: -1.9rem;
+		width: 8.1rem;
+    	margin-left: -1rem;
 	}
 	&_icon
 	{
@@ -157,7 +157,7 @@ body{
 	}
 	&_text
 	{
-		font-weight: 550;
+		font-weight: 450;
 		font-size: 1rem;
 	}
 	&_wrapper
@@ -391,21 +391,22 @@ padding-bottom: 3rem;
 		margin: 0.1rem 0.5rem 0.8rem 0.6rem;
 	}
 	&_heart
-	{
+	{	
+		color: black;
 		-webkit-text-stroke: 2px white;
 		margin:auto;
 		border: 1px solid transparent;
 		&:hover {
 			& > .heart_empty{
 				opacity: 1;
-				font-weight : 550;
+				font-weight : bold;
 				animation: heart 1500ms ease-in-out;
 				background-image: linear-gradient(
 				  rgba(147, 86, 220, 1) 0%,
 				  rgba(255, 121, 218, 1) 100%);
 				background-clip: text;
 				-webkit-background-clip: text;
-				-webkit-text-stroke: 2px rgba(147, 86, 220, 0.3);
+				-webkit-text-stroke: 1px rgba(147, 86, 220, 0.3);
 				color: transparent;
 				cursor: pointer;
 				border: 1px solid transparent;
@@ -434,7 +435,7 @@ padding-bottom: 3rem;
   }
 .heart_empty 
 {
-		font-size: 1rem;
+		font-size: 1.7rem;
 		color: black;
 		font-weight: 500;
 }
