@@ -393,11 +393,11 @@ padding-bottom: 3rem;
 	&_heart
 	{	
 		color: black;
-		-webkit-text-stroke: 2px white;
+		-webkit-text-stroke: 1px white;
 		margin:auto;
 		border: 1px solid transparent;
 		&:hover {
-			& > .heart_empty{
+			& > .heart_ept{
 				opacity: 1;
 				font-weight : bold;
 				animation: heart 1500ms ease-in-out;
@@ -433,9 +433,9 @@ padding-bottom: 3rem;
    transform: scale(1);
 	}
   }
-.heart_empty 
+.heart_ept 
 {
-		font-size: 1.7rem;
+		font-size: 1.6rem;
 		color: black;
 		font-weight: 500;
 }
