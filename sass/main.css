@@ -178,48 +178,24 @@ body {
 }
 
 @-webkit-keyframes cardapparition {
-  0% {
-    opacity: 0%;
-    transform: translateY(15px);
+  from {
+    margin-top: 100%;
+    width: 100%;
   }
-  25% {
-    opacity: 25%;
-    transform: translateY(12px);
-  }
-  50% {
-    opacity: 50%;
-    transform: translateY(7px);
-  }
-  75% {
-    opacity: 75%;
-    transform: translateY(4px);
-  }
-  100% {
-    opacity: 100;
-    transform: translateY(0px);
+  to {
+    margin-top: 0%;
+    width: 100%;
   }
 }
 
 @keyframes cardapparition {
-  0% {
-    opacity: 0%;
-    transform: translateY(15px);
+  from {
+    margin-top: 100%;
+    width: 100%;
   }
-  25% {
-    opacity: 25%;
-    transform: translateY(12px);
-  }
-  50% {
-    opacity: 50%;
-    transform: translateY(7px);
-  }
-  75% {
-    opacity: 75%;
-    transform: translateY(4px);
-  }
-  100% {
-    opacity: 100;
-    transform: translateY(0px);
+  to {
+    margin-top: 0%;
+    width: 100%;
   }
 }
 @-webkit-keyframes logoSpin {
@@ -882,7 +858,6 @@ body {
 .menu_title_heart {
   -webkit-text-stroke: 1px white;
   margin: auto;
-  border: 1px solid transparent;
 }
 .menu_title_heart:hover > .heart_empty {
   font-weight: bold;
@@ -928,8 +903,8 @@ body {
   border-radius: 1rem;
   margin: 0.5rem 0rem;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  -webkit-animation: cardapparition 900ms ease-in-out;
-          animation: cardapparition 900ms ease-in-out;
+  -webkit-animation: cardapparition 3000ms ease-in-out;
+          animation: cardapparition 3000ms ease-in-out;
   opacity: 1;
   position: relative;
   overflow: hidden;
@@ -1024,7 +999,7 @@ body {
 }
 
 .heart_empty {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: black;
   font-weight: 500;
 }
@@ -1035,34 +1010,19 @@ body {
     transform: scale(0);
   }
   25% {
-    opacity: 25%;
+    opacity: 15%;
   }
   50% {
-    opacity: 50%;
+    opacity: 40%;
   }
   75% {
-    opacity: 75%;
+    opacity: 65%;
   }
   100% {
     opacity: 100%;
     transform: scale(1);
   }
 }
-.delay1 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.delay2 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-.delay3 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
 @media all and (max-width: 370px) {
   .menu_title_h1 {
     font-size: 1.5rem;
