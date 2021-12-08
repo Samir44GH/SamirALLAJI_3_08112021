@@ -181,10 +181,12 @@ body {
   from {
     margin-top: 100%;
     width: 100%;
+    opacity: 0.1;
   }
   to {
     margin-top: 0%;
     width: 100%;
+    opacity: 1;
   }
 }
 
@@ -192,10 +194,12 @@ body {
   from {
     margin-top: 100%;
     width: 100%;
+    opacity: 0.1;
   }
   to {
     margin-top: 0%;
     width: 100%;
+    opacity: 1;
   }
 }
 @-webkit-keyframes logoSpin {
@@ -311,12 +315,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 100px;
-  height: 120px;
+  height: 200px;
 }
 
 /*Loader: triple cercle*/
 .load_circles {
-  border-radius: 50px;
+  border-radius: 57px;
   border: 5px solid transparent;
   border-top-color: #9356DC;
   -webkit-animation: spin 1s linear infinite;
@@ -324,12 +328,12 @@ body {
 }
 .load_circles:after {
   content: "";
-  border-radius: 50px;
+  border-radius: 57px;
   position: absolute;
-  top: 7px;
-  left: 7px;
-  bottom: 7px;
-  right: 7px;
+  top: 9px;
+  left: 9px;
+  bottom: 9px;
+  right: 9px;
   border: 5px solid transparent;
   border-top-color: #FF79DA;
   opacity: 0.8;
@@ -338,12 +342,12 @@ body {
 }
 .load_circles:before {
   content: "";
-  border-radius: 50px;
+  border-radius: 57px;
   position: absolute;
-  top: 22px;
-  left: 22px;
-  bottom: 22px;
-  right: 22px;
+  top: 23px;
+  left: 23px;
+  bottom: 23px;
+  right: 23px;
   border: 5px solid transparent;
   border-top-color: #99E2D0;
   opacity: 0.6;
@@ -353,7 +357,7 @@ body {
 
 @-webkit-keyframes spin {
   0% {
-    transform: rotate(Odeg);
+    transform: rotate(1deg);
   }
   100% {
     transform: rotate(360deg);
@@ -362,26 +366,10 @@ body {
 
 @keyframes spin {
   0% {
-    transform: rotate(Odeg);
+    transform: rotate(1deg);
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spinreverse {
-  0% {
-    transform: rotate(Odeg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-@keyframes spinreverse {
-  0% {
-    transform: rotate(Odeg);
-  }
-  100% {
-    transform: rotate(-360deg);
   }
 }
 @-webkit-keyframes loaderdisappear {
@@ -859,7 +847,7 @@ body {
   -webkit-text-stroke: 1px white;
   margin: auto;
 }
-.menu_title_heart:hover > .heart_empty {
+.menu_title_heart:active > .heart_empty {
   font-weight: bold;
   -webkit-animation: heart 1500ms ease-in-out;
           animation: heart 1500ms ease-in-out;
@@ -911,19 +899,19 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu_list_element:hover > .menu_list_description {
+.menu_list_element:active > .menu_list_description {
   -webkit-animation: checkboxAppear 700ms ease-in-out forwards;
           animation: checkboxAppear 700ms ease-in-out forwards;
 }
-.menu_list_element:hover > .menu_list_checkbox {
+.menu_list_element:active > .menu_list_checkbox {
   -webkit-animation: checkboxMargin 800ms ease-in-out forwards;
           animation: checkboxMargin 800ms ease-in-out forwards;
 }
-.menu_list_element:hover .menu_list_checkbox_circle {
+.menu_list_element:active .menu_list_checkbox_circle {
   -webkit-animation: logoSpin 800ms ease-in-out forwards;
           animation: logoSpin 800ms ease-in-out forwards;
 }
-.menu_list_element:hover .menu_list_price {
+.menu_list_element:active .menu_list_price {
   -webkit-animation: priceSlide 800ms ease-in-out forwards;
           animation: priceSlide 800ms ease-in-out forwards;
 }
@@ -1095,9 +1083,24 @@ body {
     margin-top: 2em;
   }
   .menu_title_h1 {
-    width: 39%;
+    width: 41%;
     margin-left: 1.4rem;
     font-size: 2.6rem;
+  }
+  .menu_title_heart {
+    margin: 0%;
+  }
+  .menu_title_heart:hover > .heart_empty {
+    font-weight: bold;
+    -webkit-animation: heart 1500ms ease-in-out;
+            animation: heart 1500ms ease-in-out;
+    background-image: linear-gradient(#9356dc 0%, #ff79da 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px rgba(147, 86, 220, 0.3);
+    color: transparent;
+    cursor: pointer;
+    border: 1px solid transparent;
   }
   .menu_wrapper {
     display: flex;
@@ -1116,6 +1119,22 @@ body {
   .menu_list_element {
     margin: 0.7rem 0rem;
   }
+  .menu_list_element:hover > .menu_list_description {
+    -webkit-animation: checkboxAppear 700ms ease-in-out forwards;
+            animation: checkboxAppear 700ms ease-in-out forwards;
+  }
+  .menu_list_element:hover > .menu_list_checkbox {
+    -webkit-animation: checkboxMargin 800ms ease-in-out forwards;
+            animation: checkboxMargin 800ms ease-in-out forwards;
+  }
+  .menu_list_element:hover .menu_list_checkbox_circle {
+    -webkit-animation: logoSpin 800ms ease-in-out forwards;
+            animation: logoSpin 800ms ease-in-out forwards;
+  }
+  .menu_list_element:hover .menu_list_price {
+    -webkit-animation: priceSlide 800ms ease-in-out forwards;
+            animation: priceSlide 800ms ease-in-out forwards;
+  }
   .menu_list_price {
     margin: 0;
   }
@@ -1124,7 +1143,7 @@ body {
     height: 500px;
   }
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: 990.9px) and (min-width: 1200px) {
   .main .div_img {
     height: 480px;
   }
@@ -1145,12 +1164,42 @@ body {
   .menu_title_h1 {
     width: 28%;
   }
-
-  .heart_empty {
+  .menu_list_element:active > .menu_list_description {
+    -webkit-animation: checkboxAppear 700ms ease-in-out forwards;
+            animation: checkboxAppear 700ms ease-in-out forwards;
+  }
+  .menu_list_element:active > .menu_list_checkbox {
+    -webkit-animation: checkboxMargin 800ms ease-in-out forwards;
+            animation: checkboxMargin 800ms ease-in-out forwards;
+  }
+  .menu_list_element:active .menu_list_checkbox_circle {
+    -webkit-animation: logoSpin 800ms ease-in-out forwards;
+            animation: logoSpin 800ms ease-in-out forwards;
+  }
+  .menu_list_element:active .menu_list_price {
+    -webkit-animation: priceSlide 800ms ease-in-out forwards;
+            animation: priceSlide 800ms ease-in-out forwards;
+  }
+  .menu_title_heart {
+    margin: 0%;
+  }
+  .menu_title_heart:hover > .heart_empty {
+    font-weight: bold;
+    -webkit-animation: heart 1500ms ease-in-out;
+            animation: heart 1500ms ease-in-out;
+    background-image: linear-gradient(#9356dc 0%, #ff79da 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px rgba(147, 86, 220, 0.3);
+    color: transparent;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  .menu .heart_empty {
     font-size: 2.5rem;
   }
 }
-@media all and (min-width: 2000px) {
+@media all and (min-width: 990.9px) and (min-width: 1200px) and (min-width: 2000px) {
   .main .div_img {
     height: 586px;
   }

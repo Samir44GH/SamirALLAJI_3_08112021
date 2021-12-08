@@ -70,7 +70,7 @@
 		-webkit-text-stroke: 1px white;
 		margin:auto;
 		
-		&:hover {
+		&:active {
 			& > .heart_empty{
 				
 				font-weight : bold;
@@ -129,7 +129,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        &:hover {
+        &:active {
           & > .menu_list_description {
               animation: checkboxAppear 700ms ease-in-out forwards;
           }
@@ -335,11 +335,32 @@
       margin-top: 2em;
       &_h1
       {
-        width: 39%;
+        width: 41%;
         margin-left: 1.4rem;
         font-size: 2.6rem;
       }
     }
+    &_title_heart
+    {
+     margin: 0%;
+      &:hover {
+        & > .heart_empty{
+          
+          font-weight : bold;
+          animation: heart 1500ms ease-in-out;
+          background-image: linear-gradient(
+            rgba(147, 86, 220, 1) 0%,
+            rgba(255, 121, 218, 1) 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-stroke: 1px rgba(147, 86, 220, 0.3);
+          color: transparent;
+          cursor: pointer;
+          border: 1px solid transparent;
+        }
+      }
+    }
+    
     &_wrapper
     {
       display: flex;
@@ -360,6 +381,20 @@
       &_element
       {
         margin: 0.7rem 0rem;
+        &:hover {
+          & > .menu_list_description {
+              animation: checkboxAppear 700ms ease-in-out forwards;
+          }
+          & > .menu_list_checkbox {
+              animation: checkboxMargin 800ms ease-in-out forwards;
+          }
+          & .menu_list_checkbox_circle {
+              animation: logoSpin 800ms ease-in-out forwards;
+          }
+          & .menu_list_price {
+              animation: priceSlide 800ms ease-in-out forwards; 
+          }
+        }
       }
       &_price
       {
@@ -371,7 +406,7 @@
   {
     height: 500px;
   }
-}
+
 
 @media all and(min-width: 1200px)
 {
@@ -400,9 +435,43 @@
     &_title_h1
   {
     width: 28%;
-
   }
+  &_list_element
+  {
+    &:active {
+      & > .menu_list_description {
+          animation: checkboxAppear 700ms ease-in-out forwards;
+      }
+      & > .menu_list_checkbox {
+          animation: checkboxMargin 800ms ease-in-out forwards;
+      }
+      & .menu_list_checkbox_circle {
+          animation: logoSpin 800ms ease-in-out forwards;
+      }
+      & .menu_list_price {
+          animation: priceSlide 800ms ease-in-out forwards; 
+      }
+    }
   }
+  &_title_heart
+    {margin: 0%;
+      &:hover {
+        & > .heart_empty{
+          
+          font-weight : bold;
+          animation: heart 1500ms ease-in-out;
+          background-image: linear-gradient(
+            rgba(147, 86, 220, 1) 0%,
+            rgba(255, 121, 218, 1) 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-stroke: 1px rgba(147, 86, 220, 0.3);
+          color: transparent;
+          cursor: pointer;
+          border: 1px solid transparent;
+        }
+      }
+    }  
   .heart_empty
   {
     font-size: 2.5rem;
@@ -445,3 +514,6 @@
   }
 }
 }
+}
+}
+

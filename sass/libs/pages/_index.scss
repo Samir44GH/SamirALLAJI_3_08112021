@@ -43,13 +43,13 @@ body{
 .loader {
     @include flex_center;
     width: 100px;
-    height: 120px;
+    height: 200px;
   }
 /*Loader: triple cercle*/
 
 .load_circles
 {
-  border-radius: 50px;
+  border-radius: 57px;
   border: 5px solid transparent;
   border-top-color:#9356DC;
   animation: spin 1s linear infinite;
@@ -57,12 +57,12 @@ body{
   &:after
 {
   content:'';
-  border-radius: 50px;
+  border-radius: 57px;
   position: absolute;
-  top: 7px;
-  left: 7px;
-  bottom: 7px; 
-  right: 7px;
+  top: 9px;
+  left: 9px;
+  bottom: 9px; 
+  right: 9px;
   border: 5px solid transparent;
   border-top-color:#FF79DA;
   opacity: 0.8;
@@ -71,12 +71,12 @@ body{
 &:before
 {
   content:'';
-  border-radius: 50px;
+  border-radius: 57px;
   position: absolute;
-  top: 22px;
-  left: 22px;
-  bottom:22px; 
-  right: 22px;
+  top: 23px;
+  left: 23px;
+  bottom:23px; 
+  right: 23px;
   border: 5px solid transparent;
   border-top-color:#99E2D0;
   opacity: 0.6;
@@ -97,17 +97,7 @@ body{
   }
 }
 
-@keyframes spinreverse
-{
-  0%
-  {
-    transform: rotate(360deg);
-  }
-  100%
-  {
-    transform:rotate(-360deg)
-  }
-}
+
 
 @keyframes loaderdisappear
 {
